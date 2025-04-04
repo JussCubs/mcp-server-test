@@ -41,6 +41,14 @@ uv run mcp install vector_server.py
 mcp install vector_server.py
 ```
 
+## Troubleshooting
+
+If you see a warning like `The package 'mcp==X.X.X' does not have an extra named 'cli'`, you may need to install the CLI tools separately:
+
+```bash
+pip install mcp httpx "click>=8.0" "rich>=10.0" "typer>=0.9.0"
+```
+
 ## Tool Documentation
 
 ### fetch_leaderboard
