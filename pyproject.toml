@@ -1,0 +1,14 @@
+[project]
+name = "mcp-server-test"
+version = "0.1.0"
+description = "Vector GraphQL API for MCP"
+authors = []
+dependencies = [
+    "mcp[cli]>=0.1.0",
+    "httpx>=0.25.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[tool.uv.sources]
+mcp = { workspace = true }
